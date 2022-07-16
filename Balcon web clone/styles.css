@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.parentContainer {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    flex-direction: column;
+}
+
+.tabList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5em;
+    list-style: none;
+}
+
+.tabList li {
+    color: #5077b5;
+    cursor: pointer;
+}
+
+.tabList li:hover {
+    color: #364e74
+}
+
+.infoBar {
+    background-color: #59ac65;
+    width: 100%;
+    height: 4.2vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.tabContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 26px 0px;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 12px;
+    letter-spacing: 0.9pt;
+    gap: 14px;
+}
+
+.logo {
+    width: 300px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.sideList {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+}
+
+.sideList li {
+    color: #5077b5;
+    cursor: pointer;
+}
+
+
+.sliderImageContainer {
+    display: flex;
+    width: 100%;
+    flex-shrink: 1;
+}
+
+.sliderImageContainer img {
+    display: flex;
+    width: 100%;
+    flex-shrink: 1;
+    cursor: pointer;
+}
+
+.collectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.flowerpotContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.flowerpotChild {
+    margin: 0 0 30px 0;
+    flex-basis: 320px;
+    cursor: pointer;
+}
+
+.flowerpotChild img {
+    width: 100%;
+    height: 100%;
+}
+
+.flowerpotChild:hover {
+    opacity: 0.5;
+}
+
+.collectionContainer h2 {
+    color: #60bb6d;
+    padding: 45px 0;
+    font-weight: 300;
+    font-size: 21px;
+    word-spacing: 0.4ch;
+    letter-spacing: 0.2ch;
+}
