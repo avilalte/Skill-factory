@@ -131,3 +131,10 @@
     word-spacing: 0.4ch;
     letter-spacing: 0.2ch;
 }
+
+.infoCards{
+width: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
