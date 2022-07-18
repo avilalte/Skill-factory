@@ -187,14 +187,14 @@
 
       <div class="footer">
         <div class="footer-section">
-          <p>OPCIONES DE ENVIO</p>
-          <p>SEGUINOS EN SPOTIFY</p>
-          <p>PLANTENNIALS</p>
+          <p><a>OPCIONES DE ENVIO</a></p>
+          <p><a>SEGUINOS EN SPOTIFY</a></p>
+          <p><a>PLANTENNIALS</a></p>
         </div>
         <div class="footer-section">
-          <p>PLANTLETTER</p>
+          <p id="plantletter">PLANTLETTER</p>
           <p>Uno cosecha lo que planta</p>
-          <form class="suscription-form" action="#">
+          <form class="subscription-form" action="#">
             <input class="form-input" type="text" placeholder="TU EMAIL" />
             <button type="submit">SUSCRIBIRME</button>
           </form>
@@ -235,8 +235,8 @@
           </div>
         </div>
         <div class="footer-section">
-          <p>EL ABC DE LAS PLANTAS</p>
-          <p>FAQS PLANTENNIALS</p>
+          <p><a>EL ABC DE LAS PLANTAS</a></p>
+          <p><a>FAQS PLANTENNIALS</a></p>
         </div>
       </div>
 
@@ -245,10 +245,10 @@
       <div class="legal-info">
         <p>Copyright © Balcon</p>
         <p class="legal-links">
-          <a href="#">Politica de cambios y devoluciones</a>
-          <a href="#">Politica de envios</a>
-          <a href="#">Politica de privacidad</a>
-          <a href="#">Terminos y condiciones</a>
+          <a>Politica de cambios y devoluciones</a>
+          <a>Politica de envios</a>
+          <a>Politica de privacidad</a>
+          <a>Terminos y condiciones</a>
         </p>
       </div>
     </div>
@@ -266,5 +266,10 @@
         src="https://cdn.shopify.com/s/files/1/0265/2572/8803/files/wa-icon.svg"
       />
     </div>
+
+    <script>
+      const subForm = document.querySelector(".subscription-form");
+      subForm.addEventListener("submit", (e) => e.preventDefault());
+    </script>
   </body>
 </html>
