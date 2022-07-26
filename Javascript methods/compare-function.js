@@ -1,7 +1,7 @@
 // Conditional statements:
 
 const compare = () => {
-  const ask = (msg) => parseInt(prompt(msg));
+  const ask = msg => parseInt(prompt(msg));
 
   let input1 = ask("Enter first input");
   let input2 = ask("Enter second input");
