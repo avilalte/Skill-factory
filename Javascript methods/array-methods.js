@@ -1,8 +1,8 @@
 // Array methods:
 
-// const skillers = ["Adrian", "Williams", "Gonzalo", "Sofía", "Mariano"];
+// const skillers = ["Adrian", "Williams", "Gonzalo", "Sofía", "Mariano"]; // Original array of skillers.
 
-const skillers = ["Gonzalo", "Alan", "Mariano", "German", "Maximiliano"]; // Original array of skillers.
+const skillers = ["Gonzalo", "Alan", "Mariano", "German", "Maximiliano"];
 
 const orderedArray = [...skillers].sort(); // Sorts names in alphabetical order. Returns mutated array.
 const orderedByLength = [...skillers].sort((a, b) => a.length - b.length); // Sorts names by length. Returns mutated array.
@@ -16,6 +16,7 @@ console.log(
   `%c Original array: ${skillers}`,
   "background: #3693af; color: white"
 ); // Original, unmutated array.
+
 console.log("Ordered by length: ", orderedByLength);
 console.log("Ordered alphabetically: ", orderedArray);
 console.log("Reversed array: ", reversedArray);
