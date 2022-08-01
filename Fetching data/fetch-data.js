@@ -19,7 +19,7 @@ const showData = (data) => {
     }>${completed}</span></span>
     `;
   });
-};
+}; 
 
 fetch("https://jsonplaceholder.typicode.com/todos")
   .then((res) => res.json())
