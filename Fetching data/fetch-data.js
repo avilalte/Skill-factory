@@ -11,7 +11,9 @@ const showData = (data) => {
     card.classList.add(`${completed == true ? "cardTrue" : "cardFalse"}`);
 
     card.innerHTML = ` 
-    <span><b>Title: </b><br> ${title}</span>
+    <span class='title'><b>TITLE</b></span>
+    <span>${title}</span>
+    <div class='divider'></div>
     <span><b>ID: </b> ${id}</span>
     <span><b>User ID: </b> ${userId}</span>
     <span><b>Completed: </b> <span class=${
@@ -19,8 +21,9 @@ const showData = (data) => {
     }>${completed}</span></span>
     `;
   });
-}; 
+};
 
 fetch("https://jsonplaceholder.typicode.com/todos")
   .then((res) => res.json())
-  .then((data) => showData(data));
+  .then((data) => showData(data))
+  .catch((err) => console.log("Error: ", err));
