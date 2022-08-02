@@ -12,7 +12,6 @@ body {
   align-items: center;
   justify-content: center;
   background: linear-gradient(#f1fdf7, #a2b1b8);
-  /* background: radial-gradient(#727995, #98a7b5, rgb(186, 232, 242)); */
   color: rgb(80, 83, 88);
 }
 
@@ -28,15 +27,24 @@ body {
   padding: 0.5rem 0.5rem;
   text-align: center;
   border-radius: 1rem;
-  background: linear-gradient(#f0f3ef, #c4e4c1);
+  background: linear-gradient(#bae1b6,#f0f3ef);
+  border-top: 1px solid linear-gradient(#031f00,#f0f3ef);
   box-shadow: 0 3px 5px #9ba6b2;
   font-size: 1.2em;
-  flex-grow: 1;
+  opacity: 0.9;
 }
 
 .cardFalse {
-  background: linear-gradient(#f0ecec, #e6d5d5);
+  background: linear-gradient(#f0ecec, #eacaca);
 }
+
+.cardTrue:hover, .cardFalse:hover {
+opacity: 1;
+transform: scale(0.98);
+transition: .1s;
+}
+
+
 
 .container {
   display: flex;

@@ -1,4 +1,4 @@
-// render in DOM: mini cards with title, ID, userID and status
+// Render mini cards with title, ID, userID and state.
 
 const container = document.querySelector(".container");
 
@@ -11,7 +11,7 @@ const showData = (data) => {
     card.classList.add(`${completed == true ? "cardTrue" : "cardFalse"}`);
 
     card.innerHTML = ` 
-    <span><b>Title: </b> ${title}</span>
+    <span><b>Title: </b><br> ${title}</span>
     <span><b>ID: </b> ${id}</span>
     <span><b>User ID: </b> ${userId}</span>
     <span><b>Completed: </b> <span class=${
